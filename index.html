@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>景點收藏管理網站</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.0/css/bootstrap.min.css">
+    <style>
+        .isNotOnPage{
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="d-flex justify-content-between p-2 bg-secondary">
+            <h1  onclick="location.href='http://127.0.0.1:5500/list.html'">LOGO</h1>
+            <div class="d-flex align-items-center justify-content-center">
+                <button type="button" class="btn btn-primary me-2" onclick="changeSignUp(true)">註冊</button>
+                <button type="button" class="btn btn-primary" onclick="changeSignUp(false)">登入</button>
+            </div>
+        </div>
+    </header>
+    <div class="container mt-5">
+        <div class="signUpPage">
+            <h3>註冊</h3>
+            <div>信箱</div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control account" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div>密碼</div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control password" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            <button type="button" class="btn btn-success signInBtn" onclick="signUp()">註冊帳號</button>
+        </div>
+        <div class="loginPage isNotOnPage">
+            <h3>登入</h3>
+            <div>信箱</div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control userEmail" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            <div>密碼</div>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control userPassword" aria-label="Sizing example input"
+                    aria-describedby="inputGroup-sizing-default">
+            </div>
+            <button type="button" class="btn btn-success" onclick="login()">登入帳號</button>
+        </div>
+    </div>
+    <script src="./bootstrap-5.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"
+        integrity="sha512-emSwuKiMyYedRwflbZB2ghzX8Cw8fmNVgZ6yQNNXXagFzFOaQmbvQ1vmDkddHjm5AITcBIZfC7k4ShQSjgPAmQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./auth/index.js"></script>
+</body>
+
+</html>

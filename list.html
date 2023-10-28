@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>景點列表</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="d-flex justify-content-between p-2 bg-secondary">
+            <h1  onclick="location.href='http://127.0.0.1:5500/list.html'">LOGO</h1>
+            <div class="d-flex align-items-center justify-content-center">
+                <button type="button" class="btn btn-primary me-2" onclick="location.href='http://127.0.0.1:5500/like.html'">收藏</button>
+                <button type="button" class="btn btn-primary" onClick="logOut()">登出</button>
+            </div>
+        </div>
+    </header>
+    <div class="container mt-5">
+        <h3>景點列表</h3>
+        <div class="d-flex" id="user-cards">
+            <!--<div class="card me-3" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's
+                        content.</p>
+                    <button type="button" class="btn btn-primary" onclick="location.href='http://127.0.0.1:5500/listDetail.html'">看詳細</button>
+                </div>
+            </div>
+        </div>-->
+        
+    </div>
+    <script src="./bootstrap-5.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"
+        integrity="sha512-emSwuKiMyYedRwflbZB2ghzX8Cw8fmNVgZ6yQNNXXagFzFOaQmbvQ1vmDkddHjm5AITcBIZfC7k4ShQSjgPAmQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./auth/index.js"></script>
+    <script src="./auth/all.js"></script>
+</body>
+
+</html>

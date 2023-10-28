@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>後台管理</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="d-flex justify-content-between p-2 bg-secondary">
+            <h1>後台</h1>
+            <div class="d-flex align-items-center justify-content-center">
+                <button type="button" class="btn btn-outline-primary me-2"  onclick="location.href='http://127.0.0.1:5500/backendEdit.html'">回到後台</button>
+                <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='http://127.0.0.1:5500/backendList.html'">回到首頁</button>
+                <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='http://127.0.0.1:5500/add.html'">新增景點</button>
+                <button type="button" class="btn btn-primary" onClick="logOut()">登出</button>
+            </div>
+        </div>
+    </header>
+    <div class="container mt-5">
+        <table class="table table-hover">
+            <thead>
+                <tr class="table-dark">
+                    <th scope="col">#</th>
+                    <th scope="col">標題</th>
+                    <th scope="col">內文</th>
+                    <th scope="col">編輯</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+                <!-- <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>
+                        <a href="#" class="link-info"  onclick="editBtn(event)">編輯</a>
+                        <a href="#" class="link-secondary" data-num="1" onclick="deleteBtn(event)">刪除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>
+                        <a href="#" class="link-info" onclick="editBtn(event)">編輯</a>
+                        <a href="#" class="link-secondary" data-num="2" onclick="deleteBtn(event)">刪除</a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>
+                        <a href="#" class="link-info" onclick="editBtn(event)">編輯</a>
+                        <a href="#" class="link-secondary delete" data-num="3" onclick="deleteBtn(event)">刪除</a>
+                    </td>
+                </tr> -->
+            </tbody>
+        </table>
+    </div>
+    <script src="./bootstrap-5.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"
+        integrity="sha512-emSwuKiMyYedRwflbZB2ghzX8Cw8fmNVgZ6yQNNXXagFzFOaQmbvQ1vmDkddHjm5AITcBIZfC7k4ShQSjgPAmQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./auth/index.js"></script>
+    <script src="./auth/all.js"></script>
+    <script src="./auth/admin.js"></script>
+</body>
+
+</html>

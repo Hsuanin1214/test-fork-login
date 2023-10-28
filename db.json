@@ -1,0 +1,66 @@
+{
+  "users": [
+    {
+      "email": "olivier@mail.com",
+      "password": "$2a$10$aBcJEVYLnFUSIJqMAP3vGuCJB3hquyZIZSxzoSQzGIGX1kRW1h4W2",
+      "role": "notAdmin",
+      "id": 1
+    },
+    {
+      "email": "olivie22r@mail.com",
+      "password": "$2a$10$oeZlx/4bg4f3KUEZ3QziS.yRtQ5FSCMDqI/o/SBRmj.UHV6BDSGrm",
+      "role": "notAdmin",
+      "id": 2
+    },
+    {
+      "email": "12313@mail.com",
+      "password": "$2a$10$d8zDMbz0ZNqS7vtXTdZRCehXi6p4WAHjL.HL8Xb3AQ9yYfPf90dfW",
+      "role": "notAdmin",
+      "id": 3
+    },
+    {
+      "email": "123@gwegw",
+      "password": "$2a$10$oO7N3fsOrmMqZ72wpcgZleBjSzQStlwW57T3D4slrxC0BETsNAhiC",
+      "role": "notAdmin",
+      "id": 4
+    },
+    {
+      "email": "1234@1234",
+      "password": "$2a$10$K5cIVjjnFUxA0uVDU5qiaeRGucNWBAJQNS0ZjJ6WZSOtSlgG5qP7m",
+      "role": "notAdmin",
+      "id": 5
+    },
+    {
+      "email": "5555@mail.com",
+      "password": "$2a$10$7u0zcuZcb8s4GMhll.J8BuuDHLvuIYZ1O6KdHcBQSe9wtI4FbexS2",
+      "role": "notAdmin",
+      "id": 6
+    },
+    {
+      "email": "123333333222@gmail.com",
+      "password": "$2a$10$PyILr.hc/KJVovVMWBuSF.i1CylgYlz9RDUZmJU2aaLrGOzD6JvM.",
+      "role": "notAdmin",
+      "id": 7
+    },
+    {
+      "email": "1admin1@mail.com",
+      "password": "$2a$10$/oe0a006pB4kXDPv6.Ve7uPu8e3NTsE.5yrzv8p4Qo3ndvL5PzNn2",
+      "role": "admin",
+      "id": 8
+    },
+    {
+      "email": "12345@12345",
+      "password": "$2a$10$tGmKJ0K4wpC1bnaDZGQU1uQx7YctfNRzcVV9GXii/vgcdmmCHZPYO",
+      "role": "notAdmin",
+      "id": 9
+    }
+  ],
+  "views": [
+    {
+      "name": "33322222222222111111",
+      "description": "333322221111",
+      "id": 2
+    }
+  ],
+  "collects": []
+}

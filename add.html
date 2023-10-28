@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>後台管理</title>
+    <link rel="stylesheet" href="./bootstrap-5.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="d-flex justify-content-between p-2 bg-secondary">
+            <h1>後台</h1>
+            <div class="d-flex align-items-center justify-content-center">
+                <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='http://127.0.0.1:5500/backendEdit.html'">回到後台</button>
+                <button type="button" class="btn btn-outline-primary me-2" onclick="location.href='http://127.0.0.1:5500/backendList.html'">回到首頁</button>
+                <button type="button" class="btn btn-primary me-2" onclick="location.href='http://127.0.0.1:5500/add.html'">新增景點</button>
+                <button type="button" class="btn btn-primary" onClick="logOut()">登出</button>
+            </div>
+        </div>
+    </header>
+    <div class="container mt-5">
+        <div>標題</div>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control addTitle" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-default">
+        </div>
+        <div>內文</div>
+        <div class="form-floating">
+            <textarea class="form-control addContent" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+            <label for="floatingTextarea2">Comments</label>
+        </div>
+        <button type="button" class="btn btn-success mt-3" onclick="addBtn()">新增資料</button>
+    </div>
+    <script src="./bootstrap-5.0.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.1/axios.min.js"
+        integrity="sha512-emSwuKiMyYedRwflbZB2ghzX8Cw8fmNVgZ6yQNNXXagFzFOaQmbvQ1vmDkddHjm5AITcBIZfC7k4ShQSjgPAmQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./auth/index.js"></script>
+    <script src="./auth/admin.js"></script>
+</body>
+
+</html>
